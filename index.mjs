@@ -4,6 +4,7 @@ template.innerHTML = `<style>
 nav ::slotted(a) {
   display: inline-block;
   padding: 0.5em;
+  color: inherit;
 }
 header {
   display: flex;
@@ -15,8 +16,8 @@ h1 {
 }
 </style>
 <header>
-  <h1><slot name="title"></slot></h1>
-  <nav><slot name="nav"></slot></nav>
+  <h1><slot name="title">slot: title</slot></h1>
+  <nav><slot name="nav">slot: nav</slot></nav>
 </header>`
 
 class PageHeader extends HTMLElement {
