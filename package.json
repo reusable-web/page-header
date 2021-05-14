@@ -1,10 +1,11 @@
 {
-  "name": "page-header",
+  "name": "@75lb/page-header",
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "0.0.0",
   "description": "page-header",
   "repository": "https://github.com/75lb/page-header",
-  "main": "index.mjs",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
   "keywords": [],
   "license": "MIT",
   "engines": {
