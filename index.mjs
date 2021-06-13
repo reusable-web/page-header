@@ -9,8 +9,8 @@ logo {
   background-position: center;
   background-size: cover;
   margin-right: var(--page-header-gutter, 0.5em);
-  height: 2em;
-  width: 2em;
+  height: var(--page-header-logo-height, 2em);
+  width: var(--page-header-logo-width, 2em);
 }
 nav ::slotted(a) {
   display: inline-block;

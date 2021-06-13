@@ -11,7 +11,15 @@
 Standard page navigation.
 
 ```html
-<page-header style="--page-header-logo-image: url('your-logo.png');">
+<style>
+  page-header {
+    --page-header-logo-image: url('your-logo.png');
+    --page-header-logo-height: 3em; /* height and width default to 2em */
+    --page-header-logo-width: 3em;
+  }
+</style>
+
+<page-header>
   <span slot="title">Header title</span>
   <a href="/" slot="nav">Nav slot 1</a>
   <a href="/" slot="nav">Nav slot 2</a>
