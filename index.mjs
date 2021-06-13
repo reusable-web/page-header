@@ -1,21 +1,34 @@
 const template = document.createElement('template')
 template.innerHTML = `<style>
-:host { display: block; }
+:host {
+  display: block;
+}
+logo {
+  display: block;
+  background-image: var(--page-header-logo-image, initial);
+  background-position: center;
+  background-size: cover;
+  margin-right: var(--page-header-gutter, 0.5em);
+  height: 2em;
+  width: 2em;
+}
 nav ::slotted(a) {
   display: inline-block;
-  padding: 0.5em;
+  padding: var(--page-header-gutter, 0.5em);
   color: inherit;
 }
 header {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 h1 {
-  margin: 0 0.5em 0 0;
+  margin: 0 var(--page-header-gutter, 0.5em) 0 0;
   padding: 0;
 }
 </style>
 <header>
+  <logo></logo>
   <h1><slot name="title">slot: title</slot></h1>
   <nav><slot name="nav">slot: nav</slot></nav>
 </header>`

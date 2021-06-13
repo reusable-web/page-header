@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>page-header</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/index.mjs" type="module"></script>
+  <style>
+    :root {
+      --page-header-logo-image:  url('75lb.png');
+    }
+  </style>
+</head>
+<body>
+  <h1>page-header</h1>
+  <h2>All slots filled</h2>
+  <page-header>
+    <span slot="title">Header title</span>
+    <a href="/" slot="nav">Nav slot 1</a>
+    <a href="/" slot="nav">Nav slot 2</a>
+    <a href="/" slot="nav">Nav slot 3</a>
+    <a href="/" slot="nav">Nav slot 4</a>
+    <a href="/" slot="nav">Nav slot 5</a>
+    <a href="/" slot="nav">Nav slot 6</a>
+  </page-header>
+
+  <h2>No nav</h2>
+  <page-header>
+    <span slot="title">Header title</span>
+  </page-header>
+
+  <h2>Empty nav</h2>
+  <page-header>
+    <span slot="title">Header title</span>
+    <span slot="nav"></span>
+  </page-header>
+
+  <h2>No title</h2>
+  <page-header>
+  </page-header>
+
+  <h2>Empty title</h2>
+  <page-header>
+    <span slot="title"></span>
+    <span slot="nav"></span>
+  </page-header>
+
+  <h2>Empty everything</h2>
+  <page-header style="--page-header-logo-image: initial;">
+    <span slot="title"></span>
+    <span slot="nav"></span>
+  </page-header>
+</body>
+<script type="module">
+</script>
+</html>
