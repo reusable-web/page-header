@@ -16,6 +16,7 @@ Standard page navigation.
     --page-header-logo-image: url('your-logo.png');
     --page-header-logo-height: 3em; /* height and width default to 2em */
     --page-header-logo-width: 3em;
+    --page-header-logo-gutter: 0.5em;
   }
 </style>
 
