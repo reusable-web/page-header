@@ -1,10 +1,9 @@
 {
-  "name": "@75lb/page-header",
+  "name": "@reusable-web/page-header",
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "0.1.2",
   "description": "page-header",
-  "repository": "https://github.com/75lb/page-header",
-  "main": "./index.mjs",
+  "repository": "https://github.com/reusable-web/page-header",
   "exports": "./index.mjs",
   "keywords": [],
   "license": "MIT",
@@ -15,7 +14,6 @@
     "test": "test-runner test/*.mjs"
   },
   "files": [
-    "index.mjs",
-    "dist"
+    "index.mjs"
   ]
 }

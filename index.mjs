@@ -25,6 +25,7 @@ header {
 h1 {
   margin: 0 var(--page-header-gutter, 0.5em) 0 0;
   padding: 0;
+  font: var(--page-header-title-font);
 }
 </style>
 <header>
