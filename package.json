@@ -1,7 +1,7 @@
 {
   "name": "@reusable-web/page-header",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "page-header",
   "repository": "https://github.com/reusable-web/page-header",
   "exports": "./index.mjs",
