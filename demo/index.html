@@ -6,15 +6,15 @@
   <script src="/index.mjs" type="module"></script>
   <style>
     :root {
-      --page-header-logo-image:  url('75lb.png');
+      --page-header-logo-image: url('75lb.png');
     }
   </style>
 </head>
 <body>
   <h1>page-header</h1>
-  <h2>All slots filled</h2>
-  <page-header>
-    <span slot="title">Header title</span>
+  <h2>All slots filled with logo and title links</h2>
+  <page-header data-logo-url="/">
+    <a href="/" slot="title">Header title</a>
     <a href="/" slot="nav">Nav slot 1</a>
     <a href="/" slot="nav">Nav slot 2</a>
     <a href="/" slot="nav">Nav slot 3</a>
