@@ -11,7 +11,7 @@ Standard page navigation.
 
 ```html
 <head>
-  <script type="module" src="./node_modules/@reusable-web/page-header/index.mjs"></script>
+  <script type="module" src="./node_modules/@reusable-web/page-header/index.js"></script>
   <style>
     page-header {
       --page-header-logo-image: url('your-logo.png');

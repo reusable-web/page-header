@@ -15,7 +15,7 @@
       padding:  1em;
     }
     textarea {
-      width:  40em;
+      width:  47em;
       height: 14em;
       margin: 1em;
     }
@@ -23,6 +23,22 @@
 </head>
 <body>
   <h1>page-header</h1>
+
+  <h2>Module script and CSS variables</h2>
+
+<textarea style="height: 17em;"><head>
+  <script type="module" src="./node_modules/@reusable-web/page-header/index.js"></script>
+  <style>
+    page-header {
+      --page-header-logo-image: url('your-logo.png');
+      --page-header-logo-height: 3em; /* height and width default to 2em */
+      --page-header-logo-width: 3em;
+      --page-header-logo-gutter: 0.5em;
+      --page-header-title-font: 1.5em sans-serif;
+    }
+  </style>
+</head></textarea>
+
   <h2>All slots filled with logo and title links</h2>
 
 <textarea><page-header data-logo-url="/">
