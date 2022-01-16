@@ -4,16 +4,16 @@
   "version": "0.2.0",
   "description": "page-header",
   "repository": "https://github.com/reusable-web/page-header",
-  "exports": "./index.mjs",
+  "exports": "./index.js",
   "keywords": [],
   "license": "MIT",
   "engines": {
-    "node": ">=14"
+    "node": ">=12.17"
   },
   "scripts": {
-    "test": "test-runner test/*.mjs"
+    "test": "test-runner test/*.js"
   },
   "files": [
-    "index.mjs"
+    "index.js"
   ]
 }

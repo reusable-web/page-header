@@ -3,63 +3,136 @@
 <head>
   <title>page-header</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="/index.mjs" type="module"></script>
+  <script src="/index.js" type="module"></script>
   <style>
     :root {
       --page-header-logo-image: url('75lb.png');
+    }
+    demo {
+      display: block;
+      border: 1px inset black;
+      margin:  1em;
+      padding:  1em;
+    }
+    textarea {
+      width:  40em;
+      height: 14em;
+      margin: 1em;
     }
   </style>
 </head>
 <body>
   <h1>page-header</h1>
   <h2>All slots filled with logo and title links</h2>
-  <page-header data-logo-url="/">
-    <a href="/" slot="title">Header title</a>
-    <a href="/" slot="nav">Nav slot 1</a>
-    <a href="/" slot="nav">Nav slot 2</a>
-    <a href="/" slot="nav">Nav slot 3</a>
-    <a href="/" slot="nav">Nav slot 4</a>
-    <a href="/" slot="nav">Nav slot 5</a>
-    <a href="/" slot="nav">Nav slot 6</a>
-  </page-header>
+
+<textarea><page-header data-logo-url="/">
+  <a href="/" slot="title">Header title</a>
+  <a href="/" slot="nav">Nav slot 1</a>
+  <a href="/" slot="nav">Nav slot 2</a>
+  <a href="/" slot="nav">Nav slot 3</a>
+  <a href="/" slot="nav">Nav slot 4</a>
+  <a href="/" slot="nav">Nav slot 5</a>
+  <a href="/" slot="nav">Nav slot 6</a>
+</page-header></textarea>
+
+  <demo>
+    <page-header data-logo-url="/">
+      <a href="/" slot="title">Header title</a>
+      <a href="/" slot="nav">Nav slot 1</a>
+      <a href="/" slot="nav">Nav slot 2</a>
+      <a href="/" slot="nav">Nav slot 3</a>
+      <a href="/" slot="nav">Nav slot 4</a>
+      <a href="/" slot="nav">Nav slot 5</a>
+      <a href="/" slot="nav">Nav slot 6</a>
+    </page-header>
+  </demo>
 
   <h2>Big gutter</h2>
-  <page-header style="--page-header-gutter: 3em;">
-    <span slot="title">Header title</span>
-    <a href="/" slot="nav">Nav slot 1</a>
-    <a href="/" slot="nav">Nav slot 2</a>
-    <a href="/" slot="nav">Nav slot 3</a>
-    <a href="/" slot="nav">Nav slot 4</a>
-    <a href="/" slot="nav">Nav slot 5</a>
-    <a href="/" slot="nav">Nav slot 6</a>
-  </page-header>
+
+<textarea><page-header style="--page-header-gutter: 3em;">
+  <span slot="title">Header title</span>
+  <a href="/" slot="nav">Nav slot 1</a>
+  <a href="/" slot="nav">Nav slot 2</a>
+  <a href="/" slot="nav">Nav slot 3</a>
+  <a href="/" slot="nav">Nav slot 4</a>
+  <a href="/" slot="nav">Nav slot 5</a>
+  <a href="/" slot="nav">Nav slot 6</a>
+</page-header></textarea>
+
+  <demo>
+    <page-header style="--page-header-gutter: 3em;">
+      <span slot="title">Header title</span>
+      <a href="/" slot="nav">Nav slot 1</a>
+      <a href="/" slot="nav">Nav slot 2</a>
+      <a href="/" slot="nav">Nav slot 3</a>
+      <a href="/" slot="nav">Nav slot 4</a>
+      <a href="/" slot="nav">Nav slot 5</a>
+      <a href="/" slot="nav">Nav slot 6</a>
+    </page-header>
+  </demo>
 
   <h2>No nav</h2>
-  <page-header>
-    <span slot="title">Header title</span>
-  </page-header>
+
+<textarea><page-header>
+  <span slot="title">Header title</span>
+</page-header></textarea>
+
+  <demo>
+    <page-header>
+      <span slot="title">Header title</span>
+    </page-header>
+  </demo>
 
   <h2>Empty nav</h2>
-  <page-header>
-    <span slot="title">Header title</span>
-    <span slot="nav"></span>
-  </page-header>
+
+<textarea><page-header>
+  <span slot="title">Header title</span>
+  <span slot="nav"></span>
+</page-header></textarea>
+
+  <demo>
+    <page-header>
+      <span slot="title">Header title</span>
+      <span slot="nav"></span>
+    </page-header>
+  </demo>
 
   <h2>No title</h2>
-  <page-header>
-  </page-header>
+
+<textarea><page-header>
+</page-header></textarea>
+
+  <demo><page-header>
+  </page-header></demo>
 
   <h2>Empty title</h2>
-  <page-header>
-    <span slot="title"></span>
-    <span slot="nav"></span>
-  </page-header>
+
+<textarea><page-header>
+  <span slot="title"></span>
+  <span slot="nav"></span>
+</page-header></textarea>
+
+  <demo>
+    <page-header>
+      <span slot="title"></span>
+      <span slot="nav"></span>
+    </page-header>
+  </demo>
 
   <h2>Empty everything</h2>
-  <page-header style="--page-header-logo-image: initial;">
-    <span slot="title"></span>
-    <span slot="nav"></span>
-  </page-header>
+
+<textarea><page-header style="--page-header-logo-image: initial;">
+  <span slot="title"></span>
+  <span slot="nav"></span>
+</page-header></textarea>
+
+  <demo>
+    <page-header style="--page-header-logo-image: initial;">
+      <span slot="title"></span>
+      <span slot="nav"></span>
+    </page-header>
+  </demo>
+
 </body>
 <script type="module">
 </script>
