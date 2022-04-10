@@ -27,7 +27,10 @@ h1 {
   padding: 0;
   font: var(--page-header-title-font, 1.5em sans-serif);
 }
-h1 ::slotted(a) { text-decoration: none; }
+h1 ::slotted(a) {
+  text-decoration: none;
+  color: inherit;
+}
 </style>
 <header>
   <logo></logo>
